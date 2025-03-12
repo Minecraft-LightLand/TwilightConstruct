@@ -24,7 +24,22 @@
 		"phantom.flavor": "游离存在",
 		"phantom.encyclopedia": "含有一缕幻影骑士的残念",
 		"phantom.ranged": "含有一缕幻影骑士的残念",
-		"phantom.armor": "含有一缕幻影骑士的残念"
+		"phantom.armor": "含有一缕幻影骑士的残念",
+		"naga": "纳迦",
+		"naga.flavor": "传说生物",
+		"naga.encyclopedia": "工具耐久度越低，挖掘和攻击速度越高",
+		"naga.ranged": "工具耐久度越低，拉弓速度越快",
+		"naga.armor": "玩家血量低时提升移动速度",
+		"carminite": "砷铅铁",
+		"carminite.flavor": "神秘机关",
+		"carminite.encyclopedia": "持有者获得隐身效果",
+		"carminite.ranged": "持有者获得隐身效果",
+		"carminite.armor": "延长受击无敌帧",
+		"red_thread": "红线",
+		"red_thread.flavor": "魔法标记",
+		"red_thread.encyclopedia": "标记目标",
+		"red_thread.ranged": "标记目标",
+		"red_thread.armor": "标记攻击者"
 	},
 	"modifier.twilight_construct": {
 		"twilight": "暮光",
@@ -35,7 +50,22 @@
 		"mystic_growth.description": "在暮色森林中缓慢恢复耐久",
 		"synergy": "同调",
 		"synergy.flavor": "光合作用?",
-		"synergy.description": "。手持的钢叶越多，恢复越快"
+		"synergy.description": "。手持的钢叶越多，恢复越快",
+		"primal_burst": "原始爆发",
+		"primal_burst.flavor": "最后一点点",
+		"primal_burst.description": "耐久度越低，工具攻击/挖掘/拉弓速度越高",
+		"primal_instinct": "原始本能",
+		"primal_instinct.flavor": "现在有点太晚了",
+		"primal_instinct.description": "血量低时获得速度效果（不可叠加）",
+		"vanishing": "消失",
+		"vanishing.flavor": "消失了，但没完全消失",
+		"vanishing.description": "持有者获得隐身效果",
+		"reappearing": "重现",
+		"reappearing.flavor": "嘿，我在这呢",
+		"reappearing.description": "延长受击无敌帧",
+		"red_marker": "红色标记",
+		"red_marker.flavor": "移动灯塔",
+		"red_marker.description": "让目标处于红色高亮状态"
 	},
 	"-cartesian": {
 		"fluid": {
@@ -47,6 +77,7 @@
 					"molten_steeleaf": "熔融钢叶",
 					"molten_ironwood": "熔融铁木",
 					"molten_phantom": "熔融幻影",
+					"molten_carminite": "熔融砷铅铁",
 					"fiery_blood": "炽热精华",
 					"meef_stroganoff": "牛头人沙拉酱肉"
 				},

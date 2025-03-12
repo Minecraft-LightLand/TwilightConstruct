@@ -1,0 +1,17 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": [
+    {
+      "item": "twilightforest:carminite_builder"
+    },
+    {
+      "item": "twilightforest:carminite_reactor"
+    }
+  ],
+  "result": {
+    "amount": 400,
+    "tag": "forge:molten_carminite"
+  },
+  "temperature": 900,
+  "time": 133
+}

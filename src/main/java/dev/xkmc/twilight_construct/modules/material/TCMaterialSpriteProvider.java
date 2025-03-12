@@ -68,6 +68,10 @@ public class TCMaterialSpriteProvider extends AbstractMaterialSpriteProvider {
 						.addARGB(255, 0xFF648141)
 						.build());
 
+		// TODO naga
+		// TODO carminite
+		// TODO red thread
+
 	}
 
 }

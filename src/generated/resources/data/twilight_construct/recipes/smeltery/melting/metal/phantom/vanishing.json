@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "twilightforest:vanishing_block"
+  },
+  "result": {
+    "amount": 10,
+    "tag": "forge:molten_carminite"
+  },
+  "temperature": 900,
+  "time": 21
+}

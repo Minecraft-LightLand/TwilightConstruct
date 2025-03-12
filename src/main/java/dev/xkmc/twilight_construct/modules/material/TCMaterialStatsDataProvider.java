@@ -44,6 +44,11 @@ public class TCMaterialStatsDataProvider extends AbstractMaterialStatsDataProvid
 				new HeadMaterialStats(1280, 8, Tiers.NETHERITE, 3),
 				HandleMaterialStats.multipliers().attackSpeed(1.1F).build(),
 				StatlessMaterialStats.BINDING);
+		this.addMaterialStats(TCMaterials.NAGA,
+				new HeadMaterialStats(512, 8, Tiers.DIAMOND, 3),
+				HandleMaterialStats.multipliers().attackDamage(1.1F).build());
+		this.addMaterialStats(TCMaterials.CARMINITE, HandleMaterialStats.multipliers().durability(-0.1f).miningSpeed(0.2f).build());
+		this.addMaterialStats(TCMaterials.RED_THREAD, StatlessMaterialStats.BINDING);
 	}
 
 	private void addRanged() {
@@ -67,6 +72,15 @@ public class TCMaterialStatsDataProvider extends AbstractMaterialStatsDataProvid
 				new LimbMaterialStats(1280, 0.1F, 0f, 0f),
 				new GripMaterialStats(0.1f, 0f, 4)
 		);
+		addMaterialStats(TCMaterials.NAGA,
+				new LimbMaterialStats(512, 0.1f, 0.1f, 0),
+				new GripMaterialStats(0.1f, 0, 3)
+		);
+		addMaterialStats(TCMaterials.CARMINITE,
+				new GripMaterialStats(-0.1f, 0.2f, 0)
+		);
+		addMaterialStats(TCMaterials.RED_THREAD,
+				StatlessMaterialStats.BOWSTRING);
 	}
 
 	private void addArmor() {
@@ -91,6 +105,18 @@ public class TCMaterialStatsDataProvider extends AbstractMaterialStatsDataProvid
 		addArmorShieldStats(TCMaterials.PHANTOM,
 				PlatingMaterialStats.builder().durabilityFactor(30).armor(3, 6, 8, 3)
 						.toughness(2.5f),
+				StatlessMaterialStats.MAILLE
+		);
+		addArmorShieldStats(TCMaterials.NAGA,
+				PlatingMaterialStats.builder().durabilityFactor(21).armor(3, 6, 7, 2)
+						.toughness(0.5f),
+				StatlessMaterialStats.MAILLE
+		);
+		addArmorShieldStats(TCMaterials.CARMINITE,
+				PlatingMaterialStats.builder().durabilityFactor(10).armor(2, 5, 7, 2),
+				StatlessMaterialStats.MAILLE
+		);
+		addMaterialStats(TCMaterials.RED_THREAD,
 				StatlessMaterialStats.MAILLE
 		);
 	}

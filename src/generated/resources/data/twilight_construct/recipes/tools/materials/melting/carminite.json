@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "twilight_construct:carminite",
+  "result": {
+    "amount": 90,
+    "tag": "forge:molten_carminite"
+  },
+  "temperature": 900
+}

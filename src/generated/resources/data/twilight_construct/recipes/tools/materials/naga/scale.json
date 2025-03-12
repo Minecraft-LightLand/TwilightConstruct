@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "twilightforest:naga_scale"
+  },
+  "material": "twilight_construct:naga",
+  "needed": 1,
+  "value": 1
+}

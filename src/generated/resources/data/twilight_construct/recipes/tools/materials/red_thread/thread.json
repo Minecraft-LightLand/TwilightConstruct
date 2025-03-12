@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "twilightforest:red_thread"
+  },
+  "material": "twilight_construct:red_thread",
+  "needed": 1,
+  "value": 1
+}

@@ -1,0 +1,26 @@
+{
+  "default": [
+    {
+      "level": 1,
+      "name": "twilight_construct:primal_burst"
+    }
+  ],
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "level": 1,
+        "name": "twilight_construct:primal_instinct"
+      }
+    ],
+    "tconstruct:head": [
+      {
+        "level": 1,
+        "name": "twilight_construct:primal_burst"
+      },
+      {
+        "level": 1,
+        "name": "twilight_construct:twilight"
+      }
+    ]
+  }
+}

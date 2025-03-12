@@ -34,7 +34,7 @@ import slimeknights.tconstruct.fluids.data.FluidBucketModelProvider;
 public final class TCFluids extends TCModule {
 	public static final FlowingFluidObject<ForgeFlowingFluid> MEEF_STROGANOFF, FIERY_BLOOD;
 	public static final FlowingFluidObject<ForgeFlowingFluid> MOLTEN_FIERY, MOLTEN_KNIGHTMETAL, MOLTEN_STEELEAF, MOLTEN_IRONWOOD;
-	public static final FlowingFluidObject<ForgeFlowingFluid> MOLTEN_PHANTOM;
+	public static final FlowingFluidObject<ForgeFlowingFluid> MOLTEN_PHANTOM, MOLTEN_CARMINITE;
 
 	static {
 		MEEF_STROGANOFF = FLUIDS.register("meef_stroganoff").type(cool("meef_stroganoff")
@@ -69,6 +69,11 @@ public final class TCFluids extends TCModule {
 						.temperature(2000).lightLevel(15))
 				.block(BurningLiquidBlock.createBurning(MapColor.COLOR_GREEN, 15, 15, 15.0F))
 				.bucket().commonTag().flowing();
+
+		MOLTEN_CARMINITE = FLUIDS.register("molten_carminite").type(hot("molten_carminite")
+						.temperature(1200).lightLevel(12))
+				.block(BurningLiquidBlock.createBurning(MapColor.COLOR_RED, 12, 10, 5.0F))
+				.bucket().commonTag().flowing();
 	}
 
 	private static FluidType.Properties cool() {
@@ -101,6 +106,7 @@ public final class TCFluids extends TCModule {
 			event.accept(MOLTEN_STEELEAF);
 			event.accept(MOLTEN_IRONWOOD);
 			event.accept(MOLTEN_PHANTOM);
+			event.accept(MOLTEN_CARMINITE);
 		}
 	}
 
@@ -142,6 +148,7 @@ public final class TCFluids extends TCModule {
 			DispenserBlock.registerBehavior(MOLTEN_STEELEAF, dispenseBucket);
 			DispenserBlock.registerBehavior(MOLTEN_IRONWOOD, dispenseBucket);
 			DispenserBlock.registerBehavior(MOLTEN_PHANTOM, dispenseBucket);
+			DispenserBlock.registerBehavior(MOLTEN_CARMINITE, dispenseBucket);
 		});
 	}
 

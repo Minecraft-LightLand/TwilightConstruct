@@ -5,6 +5,7 @@ import dev.xkmc.twilight_construct.modules.modifier.TCModifiers;
 import net.minecraft.data.PackOutput;
 import slimeknights.tconstruct.library.data.material.AbstractMaterialDataProvider;
 import slimeknights.tconstruct.library.data.material.AbstractMaterialTraitDataProvider;
+import slimeknights.tconstruct.library.materials.MaterialRegistry;
 import slimeknights.tconstruct.tools.TinkerModifiers;
 import slimeknights.tconstruct.tools.data.ModifierIds;
 import slimeknights.tconstruct.tools.stats.HeadMaterialStats;
@@ -37,5 +38,13 @@ public class TCMaterialTraitsDataProvider extends AbstractMaterialTraitDataProvi
 		addDefaultTraits(TCMaterials.PHANTOM, ModifierIds.soulbound);
 		addTraits(TCMaterials.PHANTOM, HeadMaterialStats.ID, ModifierIds.soulbound, TCModifiers.TWILIGHT.getId());
 
+		addDefaultTraits(TCMaterials.NAGA, TCModifiers.PRIMAL_BURST);
+		addTraits(TCMaterials.NAGA, HeadMaterialStats.ID, TCModifiers.PRIMAL_BURST, TCModifiers.TWILIGHT);
+		addTraits(TCMaterials.NAGA, MaterialRegistry.ARMOR, TCModifiers.PRIMAL_INSTINCT);
+
+		addDefaultTraits(TCMaterials.CARMINITE, TCModifiers.VANISHING);
+		addTraits(TCMaterials.CARMINITE, MaterialRegistry.ARMOR, TCModifiers.REAPPEARING);
+
+		addDefaultTraits(TCMaterials.RED_THREAD, TCModifiers.RED_MARKER);
 	}
 }
