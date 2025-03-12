@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:coins/ironwood"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:coins/ironwood"
+  },
+  "result": {
+    "amount": 30,
+    "tag": "forge:molten_ironwood"
+  },
+  "temperature": 900,
+  "time": 42
+}

@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:wires/ironwood"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:wires/ironwood"
+  },
+  "result": {
+    "amount": 45,
+    "tag": "forge:molten_ironwood"
+  },
+  "temperature": 900,
+  "time": 13
+}

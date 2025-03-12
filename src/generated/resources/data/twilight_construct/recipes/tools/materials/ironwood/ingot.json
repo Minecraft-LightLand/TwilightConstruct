@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "tag": "forge:ingots/ironwood"
+  },
+  "material": "twilight_construct:ironwood",
+  "needed": 1,
+  "value": 1
+}

@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "tag": "forge:nuggets/fiery"
+  },
+  "material": "twilight_construct:fiery",
+  "needed": 9,
+  "value": 1
+}

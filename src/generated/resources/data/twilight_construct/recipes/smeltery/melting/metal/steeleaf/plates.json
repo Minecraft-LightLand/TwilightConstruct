@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:plates/steeleaf"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:plates/steeleaf"
+  },
+  "result": {
+    "amount": 90,
+    "tag": "forge:molten_steeleaf"
+  },
+  "temperature": 900,
+  "time": 63
+}

@@ -1,0 +1,37 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All rights reserved"
+[[mods]]
+modId="twilight_construct"
+version="${file.jarVersion}" #mandatory
+displayName="Twilight Construct" #mandatory
+logoFile="logo.png" #optional
+credits="LightLand team" #optional
+authors="lcy0x1" #optional
+description='''
+Integration between Tinkers Construct and Twilight Forest
+'''
+[[dependencies.twilight_construct]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47.1.0,)"
+    ordering="AFTER"
+    side="BOTH"
+[[dependencies.twilight_construct]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20,1.21)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.twilight_construct]]
+    modId="tconstruct"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="BOTH"
+[[dependencies.twilight_construct]]
+    modId="twilightforest"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="BOTH"

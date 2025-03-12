@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:sheetmetals/ironwood"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:sheetmetals/ironwood"
+  },
+  "result": {
+    "amount": 90,
+    "tag": "forge:molten_ironwood"
+  },
+  "temperature": 900,
+  "time": 63
+}

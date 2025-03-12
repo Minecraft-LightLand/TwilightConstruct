@@ -1,0 +1,56 @@
+{
+	"material.twilight_construct": {
+		"fiery": "炽铁",
+		"fiery.flavor": "烫手金属",
+		"fiery.encyclopedia": "点燃攻击目标并熔炼掉落物",
+		"fiery.ranged": "点燃攻击目标",
+		"fiery.armor": "点燃攻击者",
+		"knightmetal": "骑士",
+		"knightmetal.flavor": "沉重且尖锐",
+		"knightmetal.encyclopedia": "降低移动速度但是提高伤害",
+		"knightmetal.ranged": "降低移动速度但是提高伤害",
+		"knightmetal.armor": "降低移动速度但是反射伤害",
+		"steeleaf": "钢叶",
+		"steeleaf.flavor": "这是树叶还是金属?",
+		"steeleaf.encyclopedia": "使用者手持钢叶时缓慢恢复耐久",
+		"steeleaf.ranged": "使用者手持钢叶时缓慢恢复耐久",
+		"steeleaf.armor": "",
+		"ironwood": "铁木",
+		"ironwood.flavor": "活体金属",
+		"ironwood.encyclopedia": "在暮色森林中缓慢恢复耐久",
+		"ironwood.ranged": "在暮色森林中缓慢恢复耐久",
+		"ironwood.armor": "在暮色森林中缓慢恢复耐久"
+	},
+	"modifier.twilight_construct": {
+		"twilight": "暮光",
+		"twilight.flavor": "生于暮色",
+		"twilight.description": "在暮色森林中提高挖掘速度。在暮色森林外提高攻击伤害",
+		"mystic_growth": "神秘生长",
+		"mystic_growth.flavor": "活体金属",
+		"mystic_growth.description": "在暮色森林中缓慢恢复耐久",
+		"synergy": "同调",
+		"synergy.flavor": "光合作用?",
+		"synergy.description": "。手持的钢叶越多，恢复越快"
+	},
+	"-cartesian": {
+		"fluid": {
+			"path": "",
+			"list": [
+				{
+					"molten_fiery": "熔融炽铁",
+					"molten_knightmetal": "熔融骑士金属",
+					"molten_steeleaf": "熔融钢叶",
+					"molten_ironwood": "熔融铁木",
+					"fiery_blood": "炽热精华",
+					"meef_stroganoff": "牛头人沙拉酱肉"
+				},
+				{
+					"block.twilight_construct.*_fluid": "*",
+					"fluid.twilight_construct.*": "*",
+					"fluid.twilight_construct.flowing_*": "流动*",
+					"item.twilight_construct.*_bucket": "*流动"
+				}
+			]
+		}
+	}
+}

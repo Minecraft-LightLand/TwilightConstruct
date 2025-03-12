@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:wires/fiery"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:wires/fiery"
+  },
+  "result": {
+    "amount": 45,
+    "tag": "forge:molten_fiery"
+  },
+  "temperature": 1700,
+  "time": 17
+}

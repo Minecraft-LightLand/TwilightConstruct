@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:storage_blocks/ironwood"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/ironwood"
+  },
+  "result": {
+    "amount": 810,
+    "tag": "forge:molten_ironwood"
+  },
+  "temperature": 900,
+  "time": 190
+}

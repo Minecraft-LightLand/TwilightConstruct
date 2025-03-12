@@ -1,0 +1,20 @@
+{
+  "default": [
+    {
+      "level": 1,
+      "name": "twilight_construct:mystic_growth"
+    }
+  ],
+  "perStat": {
+    "tconstruct:head": [
+      {
+        "level": 1,
+        "name": "twilight_construct:mystic_growth"
+      },
+      {
+        "level": 1,
+        "name": "twilight_construct:twilight"
+      }
+    ]
+  }
+}

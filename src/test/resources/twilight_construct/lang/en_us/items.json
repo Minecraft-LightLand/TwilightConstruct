@@ -1,0 +1,56 @@
+{
+	"material.twilight_construct": {
+		"fiery": "Fiery",
+		"fiery.flavor": "Too hot to hold",
+		"fiery.encyclopedia": "Ignites target and smelts drops",
+		"fiery.ranged": "Ignites target",
+		"fiery.armor": "Ignites attacker",
+		"knightmetal": "Knightmetal",
+		"knightmetal.flavor": "Heavy and spiky",
+		"knightmetal.encyclopedia": "Reduce movement speed but increase damage",
+		"knightmetal.ranged": "Reduce movement speed but increase damage",
+		"knightmetal.armor": "Reduce movement speed but reflect melee damage",
+		"steeleaf": "Steeleaf",
+		"steeleaf.flavor": "Is it leaf or metal?",
+		"steeleaf.encyclopedia": "Repairs itself when you hold some Steeleaf in your hands",
+		"steeleaf.ranged": "Repairs itself when you hold some Steeleaf in your hands",
+		"steeleaf.armor": "Repairs itself when you hold some Steeleaf in your hands",
+		"ironwood": "Ironwood",
+		"ironwood.flavor": "It seems to be alive",
+		"ironwood.encyclopedia": "Repairs itself in Twilight Forest",
+		"ironwood.ranged": "Repairs itself in Twilight Forest",
+		"ironwood.armor": "Repairs itself in Twilight Forest"
+	},
+	"modifier.twilight_construct": {
+		"twilight": "Twilight",
+		"twilight.flavor": "Twilight Born",
+		"twilight.description": "Increase mining speed in Twilight Forest and increase attack damage outside of it",
+		"mystic_growth": "Mystic Growth",
+		"mystic_growth.flavor": "Growing under Twilight",
+		"mystic_growth.description": "Slowly repairs itself in Twilight Forest",
+		"synergy": "Steeleaf Synergy",
+		"synergy.flavor": "Resonating Photosynthesis",
+		"synergy.description": "Slowly repairs itself when you hold Steeleaf in your hands. The more you hold, the faster it repairs."
+	},
+	"-cartesian": {
+		"fluid": {
+			"path": "",
+			"list": [
+				{
+					"molten_fiery": "Fiery",
+					"molten_knightmetal": "Knightmetal",
+					"molten_steeleaf": "Steleaf",
+					"molten_ironwood": "Ironwood",
+					"fiery_blood": "Fiery Essence",
+					"meef_stroganoff": "Meef Stroganoff"
+				},
+				{
+					"block.twilight_construct.*_fluid": "*",
+					"fluid.twilight_construct.*": "*",
+					"fluid.twilight_construct.flowing_*": "Flowing *",
+					"item.twilight_construct.*_bucket": "* Bucket"
+				}
+			]
+		}
+	}
+}

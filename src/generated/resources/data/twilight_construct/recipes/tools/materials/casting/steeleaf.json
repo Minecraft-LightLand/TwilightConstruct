@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "amount": 90,
+    "tag": "forge:molten_steeleaf"
+  },
+  "output": "twilight_construct:steeleaf",
+  "temperature": 900
+}

@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:wires/knightmetal"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:wires/knightmetal"
+  },
+  "result": {
+    "amount": 45,
+    "tag": "forge:molten_knightmetal"
+  },
+  "temperature": 1200,
+  "time": 14
+}

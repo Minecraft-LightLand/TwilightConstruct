@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:coins/knightmetal"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:coins/knightmetal"
+  },
+  "result": {
+    "amount": 30,
+    "tag": "forge:molten_knightmetal"
+  },
+  "temperature": 1200,
+  "time": 48
+}

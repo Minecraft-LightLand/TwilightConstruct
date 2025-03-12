@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "tag": "forge:nuggets/steeleaf"
+  },
+  "material": "twilight_construct:steeleaf",
+  "needed": 9,
+  "value": 1
+}

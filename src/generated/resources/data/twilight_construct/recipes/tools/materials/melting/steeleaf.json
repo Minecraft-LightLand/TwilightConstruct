@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "twilight_construct:steeleaf",
+  "result": {
+    "amount": 90,
+    "tag": "forge:molten_steeleaf"
+  },
+  "temperature": 900
+}

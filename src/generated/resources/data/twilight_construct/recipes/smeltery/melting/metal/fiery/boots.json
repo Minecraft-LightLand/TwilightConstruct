@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:damagable_melting",
+  "ingredient": {
+    "item": "twilightforest:fiery_boots"
+  },
+  "result": {
+    "amount": 360,
+    "tag": "forge:molten_fiery",
+    "unit_size": 10
+  },
+  "temperature": 1700,
+  "time": 171
+}

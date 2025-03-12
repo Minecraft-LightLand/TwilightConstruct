@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:wires/steeleaf"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:wires/steeleaf"
+  },
+  "result": {
+    "amount": 45,
+    "tag": "forge:molten_steeleaf"
+  },
+  "temperature": 900,
+  "time": 13
+}

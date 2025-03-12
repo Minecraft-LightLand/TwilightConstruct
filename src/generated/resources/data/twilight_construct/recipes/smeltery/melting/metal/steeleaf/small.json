@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:damagable_melting",
+  "ingredient": {
+    "item": "twilightforest:steeleaf_shovel"
+  },
+  "result": {
+    "amount": 90,
+    "tag": "forge:molten_steeleaf",
+    "unit_size": 10
+  },
+  "temperature": 900,
+  "time": 63
+}

@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "amount": 250,
+      "tag": "twilight_construct:fiery_blood"
+    },
+    {
+      "amount": 90,
+      "tag": "forge:molten_iron"
+    }
+  ],
+  "result": {
+    "amount": 90,
+    "tag": "forge:molten_fiery"
+  },
+  "temperature": 1700
+}

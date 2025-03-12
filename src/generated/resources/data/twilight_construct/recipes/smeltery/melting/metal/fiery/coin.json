@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:coins/fiery"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:coins/fiery"
+  },
+  "result": {
+    "amount": 30,
+    "tag": "forge:molten_fiery"
+  },
+  "temperature": 1700,
+  "time": 57
+}

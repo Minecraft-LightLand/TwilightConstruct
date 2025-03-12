@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"priority": 1000,
+	"package": "dev.xkmc.twilight_construct.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"refmap": "twilight_construct.refmap.json",
+	"mixins": [
+	],
+	"client": [
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"minVersion": "0.8"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:damagable_melting",
+  "ingredient": {
+    "item": "twilightforest:steeleaf_chestplate"
+  },
+  "result": {
+    "amount": 720,
+    "tag": "forge:molten_steeleaf",
+    "unit_size": 10
+  },
+  "temperature": 900,
+  "time": 179
+}
