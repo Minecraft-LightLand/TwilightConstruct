@@ -36,4 +36,9 @@ public class TwilightConstruct {
 	public static void onGatherData(GatherDataEvent event) {
 	}
 
+
+	public static String makeDescriptionId(String type, String name) {
+		return type + "." + MODID + "." + name;
+	}
+
 }

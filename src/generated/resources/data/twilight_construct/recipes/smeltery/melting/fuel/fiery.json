@@ -1,0 +1,10 @@
+{
+  "type": "tconstruct:melting_fuel",
+  "duration": 400,
+  "fluid": {
+    "amount": 10,
+    "fluid": "twilight_construct:fiery_blood"
+  },
+  "rate": 17,
+  "temperature": 1700
+}

@@ -13,7 +13,7 @@
       }
     }
   ],
-  "cooling_time": 85,
+  "cooling_time": 80,
   "fluid": {
     "amount": 90,
     "tag": "forge:molten_fiery"

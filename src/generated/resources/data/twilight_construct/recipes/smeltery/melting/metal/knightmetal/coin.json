@@ -16,6 +16,6 @@
     "amount": 30,
     "tag": "forge:molten_knightmetal"
   },
-  "temperature": 1200,
-  "time": 48
+  "temperature": 1000,
+  "time": 44
 }

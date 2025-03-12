@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "twilightforest:knightmetal_ring"
+  },
+  "result": {
+    "amount": 360,
+    "tag": "forge:molten_knightmetal"
+  },
+  "temperature": 1000,
+  "time": 133
+}

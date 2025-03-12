@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "twilightforest:mazebreaker_pickaxe"
+  },
+  "result": {
+    "amount": 450,
+    "tag": "forge:molten_knightmetal"
+  },
+  "temperature": 1000,
+  "time": 148
+}

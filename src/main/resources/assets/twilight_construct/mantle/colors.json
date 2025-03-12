@@ -1,0 +1,13 @@
+{
+	"material.twilight_construct": {
+		"fiery": "#662D08",
+		"knightmetal": "#C3D6AE",
+		"steeleaf": "#6DA25E",
+		"ironwood": "#83764A"
+	},
+	"modifier.twilight_construct": {
+		"synergy": "#6DA25E",
+		"twilight": "#C3D6AE",
+		"mystic_growth": "#83764A"
+	}
+}

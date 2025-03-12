@@ -17,6 +17,8 @@ public class TCFluidTextureProvider extends AbstractFluidTextureProvider {
 		tintedStew(TCFluids.MEEF_STROGANOFF).color(0xFFD3C05A);
 		tintedStew(TCFluids.FIERY_BLOOD).color(0xFF4F1010);
 
+		//FFFF3333
+
 		molten(TCFluids.MOLTEN_FIERY).color(0xFF773511);
 		molten(TCFluids.MOLTEN_KNIGHTMETAL).color(0xFFC3D6AE);
 		molten(TCFluids.MOLTEN_STEELEAF).color(0xFF51873A);

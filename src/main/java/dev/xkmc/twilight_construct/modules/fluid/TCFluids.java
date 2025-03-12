@@ -45,12 +45,12 @@ public final class TCFluids extends TCModule {
 				.bucket().flowing();
 
 		MOLTEN_FIERY = FLUIDS.register("molten_fiery").type(hot("molten_fiery")
-						.temperature(2000).lightLevel(15))
+						.temperature(1800).lightLevel(15))
 				.block(BurningLiquidBlock.createBurning(MapColor.COLOR_RED, 15, 15, 10.0F))
 				.bucket().commonTag().flowing();
 
 		MOLTEN_KNIGHTMETAL = FLUIDS.register("molten_knightmetal").type(hot("molten_knightmetal")
-						.temperature(1500).lightLevel(12))
+						.temperature(1300).lightLevel(12))
 				.block(BurningLiquidBlock.createBurning(MapColor.COLOR_GRAY, 12, 10, 5.0F))
 				.bucket().commonTag().flowing();
 
@@ -70,7 +70,7 @@ public final class TCFluids extends TCModule {
 	}
 
 	private static FluidType.Properties cool(String name) {
-		return cool().descriptionId(TConstruct.makeDescriptionId("fluid", name)).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL).sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY);
+		return cool().descriptionId(TwilightConstruct.makeDescriptionId("fluid", name)).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL).sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY);
 	}
 
 	private static FluidType.Properties slime(String name) {
@@ -78,11 +78,11 @@ public final class TCFluids extends TCModule {
 	}
 
 	private static FluidType.Properties powder(String name) {
-		return Properties.create().descriptionId(TConstruct.makeDescriptionId("fluid", name)).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_POWDER_SNOW).sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_POWDER_SNOW);
+		return Properties.create().descriptionId(TwilightConstruct.makeDescriptionId("fluid", name)).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_POWDER_SNOW).sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_POWDER_SNOW);
 	}
 
 	private static FluidType.Properties hot(String name) {
-		return Properties.create().density(2000).viscosity(10000).temperature(1000).descriptionId(TConstruct.makeDescriptionId("fluid", name)).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA).sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA).motionScale(0.0023333333333333335).canSwim(false).canDrown(false).pathType(BlockPathTypes.LAVA).adjacentPathType(null);
+		return Properties.create().density(2000).viscosity(10000).temperature(1000).descriptionId(TwilightConstruct.makeDescriptionId("fluid", name)).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA).sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA).motionScale(0.0023333333333333335).canSwim(false).canDrown(false).pathType(BlockPathTypes.LAVA).adjacentPathType(null);
 	}
 
 	@SubscribeEvent

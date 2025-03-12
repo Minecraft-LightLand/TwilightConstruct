@@ -15,12 +15,17 @@ public class TCMaterialSpriteProvider extends AbstractMaterialSpriteProvider {
 	protected void addAllMaterials() {
 		buildMaterial(TCMaterials.FIERY).ranged().meleeHarvest().armor().fallbacks("metal")
 				.colorMapper(GreyToColorMapping.builderFromBlack()
-						.addARGB(63, 0xFFFEFFFF)
-						.addARGB(102, 0xFFFEFA95)
-						.addARGB(140, 0xFFFBAD24)
-						.addARGB(178, 0xFF461E03)//FB9624
-						.addARGB(216, 0xFF662D08)
-						.addARGB(255, 0xFF773511)
+						.addARGB(63, 0xFFFEFA95)
+						.addARGB(102, 0xFFFBAD24)
+						//.addARGB(140, 0xFF461E03)
+						//.addARGB(178, 0xFF5C2603)
+						//.addARGB(216, 0xFF662D08)
+						//.addARGB(255, 0xFF773511)
+
+						.addARGB(140, 0xFF080606)
+						.addARGB(178, 0xFF080606)
+						.addARGB(216, 0xFF191313)
+						.addARGB(255, 0xFF3D2323)
 						.build());
 
 		buildMaterial(TCMaterials.KNIGHTMETAL).ranged().meleeHarvest().armor().fallbacks("metal")
@@ -53,6 +58,12 @@ public class TCMaterialSpriteProvider extends AbstractMaterialSpriteProvider {
 						.addARGB(255, 0xFF8A8E3A)
 						.build());
 
+		//191919
+		//262626
+		//404539
+		//526042
+		//526042
+		//648141
 
 	}
 

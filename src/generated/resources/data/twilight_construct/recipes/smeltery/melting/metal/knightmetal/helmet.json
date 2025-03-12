@@ -8,6 +8,6 @@
     "tag": "forge:molten_knightmetal",
     "unit_size": 10
   },
-  "temperature": 1200,
-  "time": 161
+  "temperature": 1000,
+  "time": 148
 }

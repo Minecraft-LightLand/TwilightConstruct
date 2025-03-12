@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "twilightforest:raw_ironwood"
+  },
+  "result": {
+    "amount": 120,
+    "tag": "forge:molten_ironwood"
+  },
+  "temperature": 900,
+  "time": 73
+}
