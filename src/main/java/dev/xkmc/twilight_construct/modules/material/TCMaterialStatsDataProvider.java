@@ -47,7 +47,7 @@ public class TCMaterialStatsDataProvider extends AbstractMaterialStatsDataProvid
 		this.addMaterialStats(TCMaterials.NAGA,
 				new HeadMaterialStats(512, 8, Tiers.DIAMOND, 3),
 				HandleMaterialStats.multipliers().attackDamage(1.1F).build());
-		this.addMaterialStats(TCMaterials.CARMINITE, HandleMaterialStats.multipliers().durability(-0.1f).miningSpeed(0.2f).build());
+		this.addMaterialStats(TCMaterials.CARMINITE, HandleMaterialStats.multipliers().durability(0.9f).miningSpeed(0.8f).build());
 		this.addMaterialStats(TCMaterials.RED_THREAD, StatlessMaterialStats.BINDING);
 	}
 

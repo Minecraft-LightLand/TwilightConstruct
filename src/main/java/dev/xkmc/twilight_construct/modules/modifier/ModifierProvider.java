@@ -19,7 +19,7 @@ public class ModifierProvider extends AbstractModifierProvider implements ICondi
 		this.buildModifier(TCModifiers.RED_MARKER)
 				.addModule(MobEffectModule.builder(TCModifiers.RED_MARKER_EFFECT.get())
 						.level(RandomLevelingValue.flat(0))
-						.time(RandomLevelingValue.flat(-1))
+						.time(RandomLevelingValue.flat(3600))
 						.build(), ModifierHooks.MELEE_HIT, ModifierHooks.PROJECTILE_HIT, ModifierHooks.ON_ATTACKED);
 	}
 

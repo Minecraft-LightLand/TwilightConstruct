@@ -24,7 +24,7 @@ public class VanishingModifier extends Modifier implements InventoryTickModifier
 
 	@Override
 	public void onInventoryTick(IToolStackView tool, ModifierEntry modifier, Level level, LivingEntity e, int index, boolean sel, boolean correct, ItemStack stack) {
-		if (level.isClientSide()) return;
+		if (level.isClientSide() || !correct) return;
 		var eff = e.getEffect(MobEffects.INVISIBILITY);
 		if (eff != null && eff.getDuration() > 21) return;
 		e.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 40, 0, true, false, true));

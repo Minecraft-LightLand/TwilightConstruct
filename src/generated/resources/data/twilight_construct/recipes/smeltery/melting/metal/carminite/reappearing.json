@@ -1,12 +1,12 @@
 {
   "type": "tconstruct:melting",
   "ingredient": {
-    "item": "twilightforest:carminite"
+    "item": "twilightforest:reappearing_block"
   },
   "result": {
-    "amount": 100,
+    "amount": 40,
     "tag": "forge:molten_carminite"
   },
   "temperature": 900,
-  "time": 67
+  "time": 42
 }

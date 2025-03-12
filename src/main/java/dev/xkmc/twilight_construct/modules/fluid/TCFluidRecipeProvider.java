@@ -49,18 +49,18 @@ public class TCFluidRecipeProvider extends RecipeProvider implements ISmelteryRe
 		var steeleaf = new RecipeStruct(TwilightForestMod.ID, "steeleaf", TCFluids.MOLTEN_STEELEAF).genRecipe(this, consumer);
 		var ironwood = new RecipeStruct(TwilightForestMod.ID, "ironwood", TCFluids.MOLTEN_IRONWOOD).genRecipe(this, consumer);
 		var phantom = new RecipeStruct(TwilightForestMod.ID, "phantom", TCFluids.MOLTEN_PHANTOM);
-		var carminite = new RecipeStruct(TwilightForestMod.ID, "phantom", TCFluids.MOLTEN_CARMINITE);
+		var carminite = new RecipeStruct(TwilightForestMod.ID, "carminite", TCFluids.MOLTEN_CARMINITE);
 
 		AlloyRecipeBuilder.alloy(TCFluids.MOLTEN_FIERY, 120)
 				.addInput(TCFluids.FIERY_BLOOD.ingredient(250))
 				.addInput(TinkerFluids.moltenIron.ingredient(90))
 				.save(consumer, new ResourceLocation(TwilightConstruct.MODID,"smeltery/alloying/molten_fiery"));
 
-		carminite.genMeltItem(this, consumer, "/block", 900, TFBlocks.CARMINITE_BLOCK.get().asItem());
-		carminite.genMeltItem(this, consumer, "/gem", 100, TFItems.CARMINITE.get());
-		carminite.genMeltItem(this, consumer, "/machines", 400,
+		carminite.genMeltItem(this, consumer, "/block", 810, TFBlocks.CARMINITE_BLOCK.get().asItem());
+		carminite.genMeltItem(this, consumer, "/gem", 90, TFItems.CARMINITE.get());
+		carminite.genMeltItem(this, consumer, "/machines", 360,
 				TFBlocks.CARMINITE_BUILDER.get().asItem(), TFBlocks.CARMINITE_REACTOR.get().asItem());
-		carminite.genMeltItem(this, consumer, "/reappearing", 50, TFBlocks.REAPPEARING_BLOCK.get().asItem());
+		carminite.genMeltItem(this, consumer, "/reappearing", 40, TFBlocks.REAPPEARING_BLOCK.get().asItem());
 		carminite.genMeltItem(this, consumer, "/vanishing", 10, TFBlocks.VANISHING_BLOCK.get().asItem());
 
 		phantom.genMeltTool(this, consumer, "/helmet", 5 * 90, TFItems.PHANTOM_HELMET.get());

@@ -1,5 +1,7 @@
 package dev.xkmc.twilight_construct.init;
 
+import dev.xkmc.l2library.base.L2Registrate;
+import dev.xkmc.l2library.init.data.L2TagGen;
 import dev.xkmc.twilight_construct.modules.fluid.TCFluids;
 import dev.xkmc.twilight_construct.modules.material.TCMaterials;
 import dev.xkmc.twilight_construct.modules.modifier.TCModifiers;
@@ -16,6 +18,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class TwilightConstruct {
 
 	public static final String MODID = "twilight_construct";
+	private static final L2Registrate REGISTRATE = new L2Registrate(MODID);
 
 	public TwilightConstruct() {
 		ForgeMod.enableMilkFluid();
@@ -34,6 +37,7 @@ public class TwilightConstruct {
 
 	@SubscribeEvent(priority = EventPriority.HIGH)
 	public static void onGatherData(GatherDataEvent event) {
+		REGISTRATE.addDataGenerator(L2TagGen.EFF_TAGS, e -> e.addTag(L2TagGen.TRACKED_EFFECTS).add(TCModifiers.RED_MARKER_EFFECT.get()));
 	}
 
 

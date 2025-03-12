@@ -9,9 +9,9 @@
     }
   ],
   "result": {
-    "amount": 400,
+    "amount": 360,
     "tag": "forge:molten_carminite"
   },
   "temperature": 900,
-  "time": 133
+  "time": 127
 }

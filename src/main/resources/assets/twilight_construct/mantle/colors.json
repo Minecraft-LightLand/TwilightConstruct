@@ -4,11 +4,19 @@
 		"knightmetal": "#C3D6AE",
 		"steeleaf": "#6DA25E",
 		"ironwood": "#83764A",
-		"phantom": "#526042"
+		"phantom": "#526042",
+		"naga": "#315D25",
+		"carminite": "#9A0000",
+		"red_thread": "#B70000"
 	},
 	"modifier.twilight_construct": {
 		"synergy": "#6DA25E",
 		"twilight": "#C3D6AE",
-		"mystic_growth": "#83764A"
+		"mystic_growth": "#83764A",
+		"primal_burst": "#315D25",
+		"primal_instinct": "#315D25",
+		"vanishing": "#9A0000",
+		"reappearing": "#9A0000",
+		"red_marker": "#B70000"
 	}
 }
