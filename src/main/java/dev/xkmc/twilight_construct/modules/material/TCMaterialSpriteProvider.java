@@ -58,12 +58,15 @@ public class TCMaterialSpriteProvider extends AbstractMaterialSpriteProvider {
 						.addARGB(255, 0xFF8A8E3A)
 						.build());
 
-		//191919
-		//262626
-		//404539
-		//526042
-		//526042
-		//648141
+		buildMaterial(TCMaterials.PHANTOM).ranged().meleeHarvest().armor().fallbacks("metal")
+				.colorMapper(GreyToColorMapping.builderFromBlack()
+						.addARGB(63, 0xFF191919)
+						.addARGB(102, 0xFF262626)
+						.addARGB(140, 0xFF404539)
+						.addARGB(178, 0xFF526042)
+						.addARGB(216, 0xFF526042)
+						.addARGB(255, 0xFF648141)
+						.build());
 
 	}
 

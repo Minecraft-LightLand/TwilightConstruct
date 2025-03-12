@@ -17,6 +17,7 @@ public class TCMaterialDataProvider extends AbstractMaterialDataProvider {
 		this.addMaterial(TCMaterials.KNIGHTMETAL, 3, 25, false);
 		this.addMaterial(TCMaterials.STEELEAF, 3, 25, false);
 		this.addMaterial(TCMaterials.IRONWOOD, 3, 25, false);
+		this.addMaterial(TCMaterials.PHANTOM, 4, 25, false);
 	}
 
 }

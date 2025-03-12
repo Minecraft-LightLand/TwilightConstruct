@@ -16,6 +16,7 @@ public class TCMaterialRenderInfoProvider extends AbstractMaterialRenderInfoProv
 		this.buildRenderInfo(TCMaterials.KNIGHTMETAL).color(0xC3D6AE).fallbacks("metal");
 		this.buildRenderInfo(TCMaterials.STEELEAF).color(0x6DA25E).fallbacks("metal");
 		this.buildRenderInfo(TCMaterials.IRONWOOD).color(0x83764A).fallbacks("metal");
+		this.buildRenderInfo(TCMaterials.PHANTOM).color(0x526042).fallbacks("metal");
 	}
 
 	public String getName() {

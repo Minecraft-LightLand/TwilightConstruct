@@ -34,5 +34,7 @@ public class TCMaterialTraitsDataProvider extends AbstractMaterialTraitDataProvi
 		addDefaultTraits(TCMaterials.IRONWOOD, TCModifiers.GROWTH);
 		addTraits(TCMaterials.IRONWOOD, HeadMaterialStats.ID, TCModifiers.GROWTH, TCModifiers.TWILIGHT);
 
+		addDefaultTraits(TCMaterials.PHANTOM, ModifierIds.soulbound);
+
 	}
 }

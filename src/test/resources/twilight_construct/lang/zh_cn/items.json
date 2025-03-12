@@ -19,7 +19,12 @@
 		"ironwood.flavor": "活体金属",
 		"ironwood.encyclopedia": "在暮色森林中缓慢恢复耐久",
 		"ironwood.ranged": "在暮色森林中缓慢恢复耐久",
-		"ironwood.armor": "在暮色森林中缓慢恢复耐久"
+		"ironwood.armor": "在暮色森林中缓慢恢复耐久",
+		"phantom": "幻影",
+		"phantom.flavor": "游离存在",
+		"phantom.encyclopedia": "含有一缕幻影骑士的残念",
+		"phantom.ranged": "含有一缕幻影骑士的残念",
+		"phantom.armor": "含有一缕幻影骑士的残念"
 	},
 	"modifier.twilight_construct": {
 		"twilight": "暮光",
@@ -41,6 +46,7 @@
 					"molten_knightmetal": "熔融骑士金属",
 					"molten_steeleaf": "熔融钢叶",
 					"molten_ironwood": "熔融铁木",
+					"molten_phantom": "熔融幻影",
 					"fiery_blood": "炽热精华",
 					"meef_stroganoff": "牛头人沙拉酱肉"
 				},

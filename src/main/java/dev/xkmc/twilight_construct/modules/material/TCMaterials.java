@@ -14,6 +14,7 @@ public class TCMaterials extends TCModule {
 	public static final MaterialId KNIGHTMETAL = id("knightmetal");
 	public static final MaterialId STEELEAF = id("steeleaf");
 	public static final MaterialId IRONWOOD = id("ironwood");
+	public static final MaterialId PHANTOM = id("phantom");
 
 	private static MaterialId id(String name) {
 		return new MaterialId(TwilightConstruct.MODID, name);

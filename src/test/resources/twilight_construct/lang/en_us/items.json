@@ -19,7 +19,12 @@
 		"ironwood.flavor": "It seems to be alive",
 		"ironwood.encyclopedia": "Repairs itself in Twilight Forest",
 		"ironwood.ranged": "Repairs itself in Twilight Forest",
-		"ironwood.armor": "Repairs itself in Twilight Forest"
+		"ironwood.armor": "Repairs itself in Twilight Forest",
+		"phantom": "Phantom",
+		"phantom.flavor": "Ghosting Existence",
+		"phantom.encyclopedia": "Phantom Knight's favorite",
+		"phantom.ranged": "Phantom Knight's favorite",
+		"phantom.armor": "Phantom Knight's favorite"
 	},
 	"modifier.twilight_construct": {
 		"twilight": "Twilight",
@@ -41,6 +46,7 @@
 					"molten_knightmetal": "Knightmetal",
 					"molten_steeleaf": "Steleaf",
 					"molten_ironwood": "Ironwood",
+					"molten_phantom": "Phantom",
 					"fiery_blood": "Fiery Essence",
 					"meef_stroganoff": "Meef Stroganoff"
 				},

@@ -36,6 +36,7 @@ public class TCMaterialRecipeProvider extends RecipeProvider implements IMateria
 		this.metalMaterialRecipe(consumer, TCMaterials.KNIGHTMETAL, folder, "knightmetal", false);
 		this.metalMaterialRecipe(consumer, TCMaterials.STEELEAF, folder, "steeleaf", false);
 		this.metalMaterialRecipe(consumer, TCMaterials.IRONWOOD, folder, "ironwood", false);
+		this.metalMaterialRecipe(consumer, TCMaterials.PHANTOM, folder, "phantom", false);
 	}
 
 	private void addMaterialSmeltery(Consumer<FinishedRecipe> consumer) {
@@ -44,6 +45,7 @@ public class TCMaterialRecipeProvider extends RecipeProvider implements IMateria
 		this.materialMeltingCasting(consumer, TCMaterials.KNIGHTMETAL, TCFluids.MOLTEN_KNIGHTMETAL, folder);
 		this.materialMeltingCasting(consumer, TCMaterials.STEELEAF, TCFluids.MOLTEN_STEELEAF, folder);
 		this.materialMeltingCasting(consumer, TCMaterials.IRONWOOD, TCFluids.MOLTEN_IRONWOOD, folder);
+		this.materialMeltingCasting(consumer, TCMaterials.PHANTOM, TCFluids.MOLTEN_PHANTOM, folder);
 	}
 
 }

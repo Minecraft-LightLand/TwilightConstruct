@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "twilight_construct:phantom",
+  "result": {
+    "amount": 90,
+    "tag": "forge:molten_phantom"
+  },
+  "temperature": 1700
+}

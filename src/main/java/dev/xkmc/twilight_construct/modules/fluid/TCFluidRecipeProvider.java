@@ -48,11 +48,15 @@ public class TCFluidRecipeProvider extends RecipeProvider implements ISmelteryRe
 		var knight = new RecipeStruct(TwilightForestMod.ID, "knightmetal", TCFluids.MOLTEN_KNIGHTMETAL).genRecipe(this, consumer);
 		var steeleaf = new RecipeStruct(TwilightForestMod.ID, "steeleaf", TCFluids.MOLTEN_STEELEAF).genRecipe(this, consumer);
 		var ironwood = new RecipeStruct(TwilightForestMod.ID, "ironwood", TCFluids.MOLTEN_IRONWOOD).genRecipe(this, consumer);
+		var phantom = new RecipeStruct(TwilightForestMod.ID, "phantom", TCFluids.MOLTEN_PHANTOM);
 
 		AlloyRecipeBuilder.alloy(TCFluids.MOLTEN_FIERY, 120)
 				.addInput(TCFluids.FIERY_BLOOD.ingredient(250))
 				.addInput(TinkerFluids.moltenIron.ingredient(90))
 				.save(consumer, new ResourceLocation(TwilightConstruct.MODID,"smeltery/alloying/molten_fiery"));
+
+		phantom.genMeltTool(this, consumer, "/helmet", 5 * 90, TFItems.PHANTOM_HELMET.get());
+		phantom.genMeltTool(this, consumer, "/chestplate", 8 * 90, TFItems.PHANTOM_CHESTPLATE.get());
 
 		ironwood.genMeltItem(this, consumer, "/raw", 120, TFItems.RAW_IRONWOOD.get());
 		knight.genMeltItem(this, consumer, "/shard", 10, TFItems.ARMOR_SHARD.get());

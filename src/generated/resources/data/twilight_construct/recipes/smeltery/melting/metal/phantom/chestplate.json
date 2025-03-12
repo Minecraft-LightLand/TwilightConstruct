@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:damagable_melting",
+  "ingredient": {
+    "item": "twilightforest:phantom_chestplate"
+  },
+  "result": {
+    "amount": 720,
+    "tag": "forge:molten_phantom",
+    "unit_size": 10
+  },
+  "temperature": 1700,
+  "time": 241
+}

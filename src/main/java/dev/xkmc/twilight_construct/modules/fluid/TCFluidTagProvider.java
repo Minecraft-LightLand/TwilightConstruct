@@ -27,8 +27,9 @@ public class TCFluidTagProvider extends FluidTagsProvider {
 		this.fluidTag(TCFluids.MOLTEN_KNIGHTMETAL);
 		this.fluidTag(TCFluids.MOLTEN_STEELEAF);
 		this.fluidTag(TCFluids.MOLTEN_IRONWOOD);
-		this.tag(TinkerTags.Fluids.METAL_TOOLTIPS).addTags(TCFluids.MOLTEN_FIERY.getTag(), TCFluids.MOLTEN_KNIGHTMETAL.getTag(), TCFluids.MOLTEN_STEELEAF.getTag(), TCFluids.MOLTEN_IRONWOOD.getTag());
-		this.tag(TinkerTags.Fluids.AVERAGE_METAL_SPILLING).addTags(TCFluids.MOLTEN_FIERY.getTag(), TCFluids.MOLTEN_KNIGHTMETAL.getTag(), TCFluids.MOLTEN_STEELEAF.getTag(), TCFluids.MOLTEN_IRONWOOD.getTag());
+		this.fluidTag(TCFluids.MOLTEN_PHANTOM);
+		this.tag(TinkerTags.Fluids.METAL_TOOLTIPS).addTags(TCFluids.MOLTEN_FIERY.getTag(), TCFluids.MOLTEN_KNIGHTMETAL.getTag(), TCFluids.MOLTEN_STEELEAF.getTag(), TCFluids.MOLTEN_IRONWOOD.getTag(), TCFluids.MOLTEN_PHANTOM.getTag());
+		this.tag(TinkerTags.Fluids.AVERAGE_METAL_SPILLING).addTags(TCFluids.MOLTEN_FIERY.getTag(), TCFluids.MOLTEN_KNIGHTMETAL.getTag(), TCFluids.MOLTEN_STEELEAF.getTag(), TCFluids.MOLTEN_IRONWOOD.getTag(), TCFluids.MOLTEN_PHANTOM.getTag());
 	}
 
 	public String getName() {

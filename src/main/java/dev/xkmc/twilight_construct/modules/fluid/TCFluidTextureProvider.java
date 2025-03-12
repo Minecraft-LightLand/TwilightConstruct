@@ -23,6 +23,7 @@ public class TCFluidTextureProvider extends AbstractFluidTextureProvider {
 		molten(TCFluids.MOLTEN_KNIGHTMETAL).color(0xFFC3D6AE);
 		molten(TCFluids.MOLTEN_STEELEAF).color(0xFF51873A);
 		molten(TCFluids.MOLTEN_IRONWOOD).color(0xFF8A8E3A);
+		molten(TCFluids.MOLTEN_PHANTOM).color(0xFF526042);
 	}
 
 

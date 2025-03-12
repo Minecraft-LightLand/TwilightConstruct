@@ -40,6 +40,10 @@ public class TCMaterialStatsDataProvider extends AbstractMaterialStatsDataProvid
 				new HeadMaterialStats(512, 6.5F, Tiers.IRON, 2),
 				HandleMaterialStats.multipliers().durability(1.2F).build(),
 				StatlessMaterialStats.BINDING);
+		this.addMaterialStats(TCMaterials.PHANTOM,
+				new HeadMaterialStats(1280, 8, Tiers.NETHERITE, 3),
+				HandleMaterialStats.multipliers().attackSpeed(1.1F).build(),
+				StatlessMaterialStats.BINDING);
 	}
 
 	private void addRanged() {
@@ -58,6 +62,10 @@ public class TCMaterialStatsDataProvider extends AbstractMaterialStatsDataProvid
 		addMaterialStats(TCMaterials.IRONWOOD,
 				new LimbMaterialStats(512, 0, 0, 0),
 				new GripMaterialStats(0.2F, 0, 2)
+		);
+		addMaterialStats(TCMaterials.PHANTOM,
+				new LimbMaterialStats(1280, 0.1F, 0f, 0f),
+				new GripMaterialStats(0.1f, 0f, 4)
 		);
 	}
 
@@ -78,6 +86,11 @@ public class TCMaterialStatsDataProvider extends AbstractMaterialStatsDataProvid
 		);
 		addArmorShieldStats(TCMaterials.IRONWOOD,
 				PlatingMaterialStats.builder().durabilityFactor(20).armor(2, 5, 7, 2),
+				StatlessMaterialStats.MAILLE
+		);
+		addArmorShieldStats(TCMaterials.PHANTOM,
+				PlatingMaterialStats.builder().durabilityFactor(30).armor(3, 6, 8, 3)
+						.toughness(2.5f),
 				StatlessMaterialStats.MAILLE
 		);
 	}
