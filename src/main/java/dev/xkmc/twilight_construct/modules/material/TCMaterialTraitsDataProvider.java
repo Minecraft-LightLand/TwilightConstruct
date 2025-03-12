@@ -28,13 +28,14 @@ public class TCMaterialTraitsDataProvider extends AbstractMaterialTraitDataProvi
 		PlatingMaterialStats.TYPES.forEach(e -> addTraits(TCMaterials.KNIGHTMETAL, e.getId(), ModifierIds.heavy, TinkerModifiers.thorns.getId()));
 
 		addDefaultTraits(TCMaterials.STEELEAF, TCModifiers.SYNERGY);
-		addTraits(TCMaterials.STEELEAF, HeadMaterialStats.ID, ModifierIds.heavy, TCModifiers.TWILIGHT.getId());
+		addTraits(TCMaterials.STEELEAF, HeadMaterialStats.ID, TCModifiers.SYNERGY, TCModifiers.TWILIGHT);
 		PlatingMaterialStats.TYPES.forEach(e -> addTraits(TCMaterials.STEELEAF, e.getId(), TCModifiers.SYNERGY, TinkerModifiers.thorns));
 
 		addDefaultTraits(TCMaterials.IRONWOOD, TCModifiers.GROWTH);
 		addTraits(TCMaterials.IRONWOOD, HeadMaterialStats.ID, TCModifiers.GROWTH, TCModifiers.TWILIGHT);
 
 		addDefaultTraits(TCMaterials.PHANTOM, ModifierIds.soulbound);
+		addTraits(TCMaterials.PHANTOM, HeadMaterialStats.ID, ModifierIds.soulbound, TCModifiers.TWILIGHT.getId());
 
 	}
 }

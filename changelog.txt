@@ -1,5 +1,10 @@
+1.0.2
+- Add Phantom
+- Remove invalid icons from book
+- Fix Steeleaf traits
+
 1.0.1
-- Add misc recipes, improve textures
+- Add misc recipes, improve fiery and ironwood texture
 
 1.0.0
 - Initial Release

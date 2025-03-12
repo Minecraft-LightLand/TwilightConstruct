@@ -3,7 +3,8 @@
 		"fiery": "#662D08",
 		"knightmetal": "#C3D6AE",
 		"steeleaf": "#6DA25E",
-		"ironwood": "#83764A"
+		"ironwood": "#83764A",
+		"phantom": "#526042"
 	},
 	"modifier.twilight_construct": {
 		"synergy": "#6DA25E",

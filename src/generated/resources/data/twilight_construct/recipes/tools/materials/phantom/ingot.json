@@ -1,5 +1,14 @@
 {
   "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:ingots/phantom"
+      }
+    }
+  ],
   "ingredient": {
     "tag": "forge:ingots/phantom"
   },

@@ -4,5 +4,17 @@
       "level": 1,
       "name": "tconstruct:soulbound"
     }
-  ]
+  ],
+  "perStat": {
+    "tconstruct:head": [
+      {
+        "level": 1,
+        "name": "tconstruct:soulbound"
+      },
+      {
+        "level": 1,
+        "name": "twilight_construct:twilight"
+      }
+    ]
+  }
 }

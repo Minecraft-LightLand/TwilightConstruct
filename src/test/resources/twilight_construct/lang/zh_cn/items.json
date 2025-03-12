@@ -54,7 +54,7 @@
 					"block.twilight_construct.*_fluid": "*",
 					"fluid.twilight_construct.*": "*",
 					"fluid.twilight_construct.flowing_*": "流动*",
-					"item.twilight_construct.*_bucket": "*流动"
+					"item.twilight_construct.*_bucket": "*桶"
 				}
 			]
 		}

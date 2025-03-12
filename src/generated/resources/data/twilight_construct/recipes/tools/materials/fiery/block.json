@@ -1,5 +1,14 @@
 {
   "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:storage_blocks/fiery"
+      }
+    }
+  ],
   "ingredient": {
     "tag": "forge:storage_blocks/fiery"
   },

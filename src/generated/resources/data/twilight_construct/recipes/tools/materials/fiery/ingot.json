@@ -1,5 +1,14 @@
 {
   "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:ingots/fiery"
+      }
+    }
+  ],
   "ingredient": {
     "tag": "forge:ingots/fiery"
   },

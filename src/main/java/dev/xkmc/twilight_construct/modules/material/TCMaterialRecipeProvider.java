@@ -32,11 +32,11 @@ public class TCMaterialRecipeProvider extends RecipeProvider implements IMateria
 
 	private void addMaterialItems(Consumer<FinishedRecipe> consumer) {
 		String folder = "tools/materials/";
-		this.metalMaterialRecipe(consumer, TCMaterials.FIERY, folder, "fiery", false);
-		this.metalMaterialRecipe(consumer, TCMaterials.KNIGHTMETAL, folder, "knightmetal", false);
-		this.metalMaterialRecipe(consumer, TCMaterials.STEELEAF, folder, "steeleaf", false);
-		this.metalMaterialRecipe(consumer, TCMaterials.IRONWOOD, folder, "ironwood", false);
-		this.metalMaterialRecipe(consumer, TCMaterials.PHANTOM, folder, "phantom", false);
+		this.metalMaterialRecipe(consumer, TCMaterials.FIERY, folder, "fiery", true);
+		this.metalMaterialRecipe(consumer, TCMaterials.KNIGHTMETAL, folder, "knightmetal", true);
+		this.metalMaterialRecipe(consumer, TCMaterials.STEELEAF, folder, "steeleaf", true);
+		this.metalMaterialRecipe(consumer, TCMaterials.IRONWOOD, folder, "ironwood", true);
+		this.metalMaterialRecipe(consumer, TCMaterials.PHANTOM, folder, "phantom", true);
 	}
 
 	private void addMaterialSmeltery(Consumer<FinishedRecipe> consumer) {
