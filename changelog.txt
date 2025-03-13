@@ -1,3 +1,10 @@
+1.0.4
+- Fix modifiers
+- Add config options to all modifiers
+
+1.0.3
+- Add Naga, Carminite, Red Thread material
+
 1.0.2
 - Add Phantom
 - Remove invalid icons from book

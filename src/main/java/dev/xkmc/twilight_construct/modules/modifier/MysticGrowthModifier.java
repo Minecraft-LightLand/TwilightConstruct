@@ -1,5 +1,6 @@
 package dev.xkmc.twilight_construct.modules.modifier;
 
+import dev.xkmc.twilight_construct.init.TCModConfig;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -29,7 +30,8 @@ public class MysticGrowthModifier extends Modifier implements InventoryTickModif
 		if (!TCUtils.isTwilight(world)) return;
 		float lc = modifier.getEffectiveLevel();
 		if (lc < 0.1f) return;
-		if (holder.tickCount % (100 / modifier.getEffectiveLevel()) != 0) return;
+		int interval = TCModConfig.COMMON.mysticGrowthBaseInterval.get();
+		if (holder.tickCount % (int) ((interval / modifier.getEffectiveLevel())) != 0) return;
 		tool.setDamage(Math.max(0, tool.getDamage() - 1));
 	}
 

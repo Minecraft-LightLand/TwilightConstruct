@@ -50,7 +50,7 @@
 		"mystic_growth.description": "在暮色森林中缓慢恢复耐久",
 		"synergy": "同调",
 		"synergy.flavor": "光合作用?",
-		"synergy.description": "。手持的钢叶越多，恢复越快",
+		"synergy.description": "手持钢叶时缓慢恢复耐久。手持的钢叶越多，恢复越快",
 		"primal_burst": "原始爆发",
 		"primal_burst.flavor": "最后一点点",
 		"primal_burst.description": "耐久度越低，工具攻击/挖掘/拉弓速度越高",

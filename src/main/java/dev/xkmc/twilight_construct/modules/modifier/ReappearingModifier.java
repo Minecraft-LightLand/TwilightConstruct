@@ -1,5 +1,6 @@
 package dev.xkmc.twilight_construct.modules.modifier;
 
+import dev.xkmc.twilight_construct.init.TCModConfig;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EquipmentSlot;
 import slimeknights.tconstruct.library.modifiers.Modifier;
@@ -22,8 +23,8 @@ public class ReappearingModifier extends Modifier implements ModifyDamageModifie
 
 	@Override
 	public float modifyDamageTaken(IToolStackView iToolStackView, ModifierEntry modifier, EquipmentContext ctx, EquipmentSlot equipmentSlot, DamageSource damageSource, float v, boolean b) {
-		ctx.getEntity().invulnerableTime += modifier.getLevel() * 5;
-		return 0;
+		ctx.getEntity().invulnerableTime += modifier.getLevel() * TCModConfig.COMMON.reappearingTicks.get();
+		return v;
 	}
 
 
