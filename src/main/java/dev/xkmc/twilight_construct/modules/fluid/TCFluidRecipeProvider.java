@@ -14,10 +14,12 @@ import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.Nullable;
 import slimeknights.mantle.recipe.data.ICommonRecipeHelper;
+import slimeknights.mantle.recipe.helper.ItemOutput;
 import slimeknights.mantle.registration.object.FlowingFluidObject;
 import slimeknights.tconstruct.fluids.TinkerFluids;
 import slimeknights.tconstruct.library.data.recipe.ISmelteryRecipeHelper;
 import slimeknights.tconstruct.library.recipe.alloying.AlloyRecipeBuilder;
+import slimeknights.tconstruct.library.recipe.casting.ItemCastingRecipeBuilder;
 import slimeknights.tconstruct.library.recipe.fuel.MeltingFuelBuilder;
 import slimeknights.tconstruct.library.recipe.melting.MeltingRecipeBuilder;
 import twilightforest.TwilightForestMod;
@@ -44,54 +46,80 @@ public class TCFluidRecipeProvider extends RecipeProvider implements ISmelteryRe
 	}
 
 	protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
-		var fiery = new RecipeStruct(TwilightForestMod.ID, "fiery", TCFluids.MOLTEN_FIERY).genRecipe(this, consumer);
-		var knight = new RecipeStruct(TwilightForestMod.ID, "knightmetal", TCFluids.MOLTEN_KNIGHTMETAL).genRecipe(this, consumer);
-		var steeleaf = new RecipeStruct(TwilightForestMod.ID, "steeleaf", TCFluids.MOLTEN_STEELEAF).genRecipe(this, consumer);
-		var ironwood = new RecipeStruct(TwilightForestMod.ID, "ironwood", TCFluids.MOLTEN_IRONWOOD).genRecipe(this, consumer);
-		var phantom = new RecipeStruct(TwilightForestMod.ID, "phantom", TCFluids.MOLTEN_PHANTOM);
-		var carminite = new RecipeStruct(TwilightForestMod.ID, "carminite", TCFluids.MOLTEN_CARMINITE);
 
-		AlloyRecipeBuilder.alloy(TCFluids.MOLTEN_FIERY, 120)
-				.addInput(TCFluids.FIERY_BLOOD.ingredient(250))
-				.addInput(TinkerFluids.moltenIron.ingredient(90))
-				.save(consumer, new ResourceLocation(TwilightConstruct.MODID,"smeltery/alloying/molten_fiery"));
+		{
+			var fiery = new RecipeStruct(TwilightForestMod.ID, "fiery", TCFluids.MOLTEN_FIERY).genRecipe(this, consumer);
+			var knight = new RecipeStruct(TwilightForestMod.ID, "knightmetal", TCFluids.MOLTEN_KNIGHTMETAL).genRecipe(this, consumer);
+			var steeleaf = new RecipeStruct(TwilightForestMod.ID, "steeleaf", TCFluids.MOLTEN_STEELEAF).genRecipe(this, consumer);
+			var ironwood = new RecipeStruct(TwilightForestMod.ID, "ironwood", TCFluids.MOLTEN_IRONWOOD).genRecipe(this, consumer);
+			var phantom = new RecipeStruct(TwilightForestMod.ID, "phantom", TCFluids.MOLTEN_PHANTOM);
+			var carminite = new RecipeStruct(TwilightForestMod.ID, "carminite", TCFluids.MOLTEN_CARMINITE);
 
-		carminite.genMeltItem(this, consumer, "/block", 810, TFBlocks.CARMINITE_BLOCK.get().asItem());
-		carminite.genMeltItem(this, consumer, "/gem", 90, TFItems.CARMINITE.get());
-		carminite.genMeltItem(this, consumer, "/machines", 360,
-				TFBlocks.CARMINITE_BUILDER.get().asItem(), TFBlocks.CARMINITE_REACTOR.get().asItem());
-		carminite.genMeltItem(this, consumer, "/reappearing", 40, TFBlocks.REAPPEARING_BLOCK.get().asItem());
-		carminite.genMeltItem(this, consumer, "/vanishing", 10, TFBlocks.VANISHING_BLOCK.get().asItem());
+			carminite.genMeltItem(this, consumer, "/block", 810, TFBlocks.CARMINITE_BLOCK.get().asItem());
+			carminite.genMeltItem(this, consumer, "/gem", 90, TFItems.CARMINITE.get());
+			carminite.genMeltItem(this, consumer, "/machines", 360,
+					TFBlocks.CARMINITE_BUILDER.get().asItem(), TFBlocks.CARMINITE_REACTOR.get().asItem());
+			carminite.genMeltItem(this, consumer, "/reappearing", 40, TFBlocks.REAPPEARING_BLOCK.get().asItem());
+			carminite.genMeltItem(this, consumer, "/vanishing", 10, TFBlocks.VANISHING_BLOCK.get().asItem());
 
-		phantom.genMeltTool(this, consumer, "/helmet", 5 * 90, TFItems.PHANTOM_HELMET.get());
-		phantom.genMeltTool(this, consumer, "/chestplate", 8 * 90, TFItems.PHANTOM_CHESTPLATE.get());
+			phantom.genMeltTool(this, consumer, "/helmet", 5 * 90, TFItems.PHANTOM_HELMET.get());
+			phantom.genMeltTool(this, consumer, "/chestplate", 8 * 90, TFItems.PHANTOM_CHESTPLATE.get());
 
-		ironwood.genMeltItem(this, consumer, "/raw", 120, TFItems.RAW_IRONWOOD.get());
-		knight.genMeltItem(this, consumer, "/shard", 10, TFItems.ARMOR_SHARD.get());
-		knight.genMeltItem(this, consumer, "/cluster", 90, TFItems.ARMOR_SHARD_CLUSTER.get());
-		knight.genMeltItem(this, consumer, "/loop", 4 * 90, TFItems.KNIGHTMETAL_RING.get());
-		knight.genMeltItem(this, consumer, "/maze_breaker", 5 * 90, TFItems.MAZEBREAKER_PICKAXE.get());
-		knight.genMeltTool(this, consumer, "/shield", 7 * 90, TFItems.KNIGHTMETAL_SHIELD.get());
-		knight.genMeltTool(this, consumer, "/block_and_chain", 16 * 90, TFItems.BLOCK_AND_CHAIN.get());
+			ironwood.genMeltItem(this, consumer, "/raw", 120, TFItems.RAW_IRONWOOD.get());
+			knight.genMeltItem(this, consumer, "/shard", 10, TFItems.ARMOR_SHARD.get());
+			knight.genMeltItem(this, consumer, "/cluster", 90, TFItems.ARMOR_SHARD_CLUSTER.get());
+			knight.genMeltItem(this, consumer, "/loop", 4 * 90, TFItems.KNIGHTMETAL_RING.get());
+			knight.genMeltItem(this, consumer, "/maze_breaker", 5 * 90, TFItems.MAZEBREAKER_PICKAXE.get());
+			knight.genMeltTool(this, consumer, "/shield", 7 * 90, TFItems.KNIGHTMETAL_SHIELD.get());
+			knight.genMeltTool(this, consumer, "/block_and_chain", 16 * 90, TFItems.BLOCK_AND_CHAIN.get());
 
-		String folder = "smeltery/melting/";
-		String meltingFolder = folder + "metal/";
+			String folder = "smeltery/melting/";
 
-		MeltingRecipeBuilder.melting(Ingredient.of(TFBlocks.IRON_LADDER.get()), TinkerFluids.moltenIron, 30)
-				.save(consumer, location(meltingFolder + "iron/ladder"));
+			MeltingRecipeBuilder.melting(Ingredient.of(TFBlocks.IRON_LADDER.get()), TinkerFluids.moltenIron, 30)
+					.save(consumer, location(folder + "metal/iron/ladder"));
 
-		MeltingRecipeBuilder.melting(Ingredient.of(TFItems.GOLDEN_MINOTAUR_AXE.get()), TinkerFluids.moltenGold, 5 * 90)
-				.save(consumer, location(meltingFolder + "gold/minotaur_axe"));
+			MeltingRecipeBuilder.melting(Ingredient.of(TFItems.GOLDEN_MINOTAUR_AXE.get()), TinkerFluids.moltenGold, 5 * 90)
+					.save(consumer, location(folder + "metal/gold/minotaur_axe"));
 
-		meltingFolder = "smeltery/melting/gems/";
-		MeltingRecipeBuilder.melting(Ingredient.of(TFItems.DIAMOND_MINOTAUR_AXE.get()), TinkerFluids.moltenDiamond, 5 * 100)
-				.save(consumer, location(meltingFolder + "diamond/minotaur_axe"));
+			MeltingRecipeBuilder.melting(Ingredient.of(TFItems.DIAMOND_MINOTAUR_AXE.get()), TinkerFluids.moltenDiamond, 5 * 100)
+					.save(consumer, location(folder + "gems/diamond/minotaur_axe"));
 
-		meltingFolder = "smeltery/melting/obsidian/";
-		MeltingRecipeBuilder.melting(Ingredient.of(TFBlocks.GIANT_OBSIDIAN.get()), TinkerFluids.moltenObsidian, 64 * 1000)
-				.save(consumer, location(meltingFolder + "obsidian/giant_block"));
+			MeltingRecipeBuilder.melting(Ingredient.of(TFBlocks.GIANT_OBSIDIAN.get()), TinkerFluids.moltenObsidian, 64 * 1000)
+					.save(consumer, location(folder + "obsidian/giant_block"));
+		}
 
-		MeltingFuelBuilder.fuel(new FluidStack(TCFluids.FIERY_BLOOD.get(), 10), 400).save(consumer, this.location(folder + "fuel/fiery"));
+		{
+			String folder = "smeltery/casting/";
+
+			ItemCastingRecipeBuilder.tableRecipe(ItemOutput.fromItem(TFItems.EXPERIMENT_115.get()))
+					.setFluidAndTime(TCFluids.MOLTEN_CARMINITE, 90)
+					.setCast(Items.CAKE, true)
+					.save(consumer, location(folder + "misc/exp_115"));
+
+			ItemCastingRecipeBuilder.tableRecipe(ItemOutput.fromItem(TFBlocks.RED_THREAD.get()))
+					.setFluidAndTime(TCFluids.FIERY_BLOOD, 50)
+					.setCast(Items.STRING, true)
+					.save(consumer, location(folder + "misc/red_thread"));
+
+		}
+
+		{
+			String folder = "smeltery/alloying/";
+
+			AlloyRecipeBuilder.alloy(TCFluids.MOLTEN_FIERY, 120)
+					.addInput(TCFluids.FIERY_BLOOD.ingredient(250))
+					.addInput(TinkerFluids.moltenIron.ingredient(90))
+					.save(consumer, location(folder + "molten_fiery"));
+
+			AlloyRecipeBuilder.alloy(TCFluids.FIERY_BLOOD, 50)
+					.addInput(TCFluids.MOLTEN_CARMINITE.ingredient(90))
+					.addInput(TinkerFluids.blazingBlood.ingredient(100))
+					.addInput(TinkerFluids.moltenDebris.ingredient(30))
+					.save(consumer, location(folder + "fiery_essence"));
+		}
+
+		MeltingFuelBuilder.fuel(new FluidStack(TCFluids.FIERY_BLOOD.get(), 10), 400)
+				.save(consumer, location("smeltery/fuel/fiery"));
 
 	}
 
@@ -114,7 +142,6 @@ public class TCFluidRecipeProvider extends RecipeProvider implements ISmelteryRe
 			pvd.metalTagCasting(consumer, fluid, id, castingFolder, false);
 			return this;
 		}
-
 
 		private RecipeStruct genMeltItem(TCFluidRecipeProvider pvd, Consumer<FinishedRecipe> consumer, String loc, int amount, Item... items) {
 			String meltingFolder = "smeltery/melting/metal/" + id + loc;
@@ -139,6 +166,5 @@ public class TCFluidRecipeProvider extends RecipeProvider implements ISmelteryRe
 		}
 
 	}
-
 
 }

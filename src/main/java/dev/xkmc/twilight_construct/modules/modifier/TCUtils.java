@@ -1,6 +1,7 @@
 package dev.xkmc.twilight_construct.modules.modifier;
 
 import dev.xkmc.l2library.base.effects.ClientEffectCap;
+import dev.xkmc.twilight_construct.init.TCModConfig;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
@@ -15,7 +16,8 @@ public class TCUtils {
 	public static boolean isRedMarked(Entity self) {
 		if (!(self instanceof LivingEntity le)) return false;
 		if (!le.level().isClientSide()) return false;
-		return ClientEffectCap.HOLDER.get(le).map.containsKey(TCModifiers.RED_MARKER_EFFECT.get());
+		if (!TCModConfig.CLIENT.enableRedMarkerEffect.get()) return false;
+		return le.isAlive() && ClientEffectCap.HOLDER.get(le).map.containsKey(TCModifiers.RED_MARKER_EFFECT.get());
 	}
 
 }

@@ -8,6 +8,17 @@ import org.apache.commons.lang3.tuple.Pair;
 
 public class TCModConfig {
 
+	public static class Client {
+
+		public final ForgeConfigSpec.BooleanValue enableRedMarkerEffect;
+
+		Client(ForgeConfigSpec.Builder builder) {
+			enableRedMarkerEffect = builder.define("enableRedMarkerEffect", true);
+		}
+
+
+	}
+
 	public static class Common {
 
 		public final ForgeConfigSpec.IntValue mysticGrowthBaseInterval;
@@ -42,15 +53,24 @@ public class TCModConfig {
 	public static final ForgeConfigSpec COMMON_SPEC;
 	public static final Common COMMON;
 
+	public static final ForgeConfigSpec CLIENT_SPEC;
+	public static final Client CLIENT;
+
 	static {
 
-		final Pair<Common, ForgeConfigSpec> specPair = new ForgeConfigSpec.Builder().configure(Common::new);
-		COMMON_SPEC = specPair.getRight();
-		COMMON = specPair.getLeft();
+		final Pair<Common, ForgeConfigSpec> commonPair = new ForgeConfigSpec.Builder().configure(Common::new);
+		COMMON_SPEC = commonPair.getRight();
+		COMMON = commonPair.getLeft();
+
+
+		final Pair<Client, ForgeConfigSpec> clientPair = new ForgeConfigSpec.Builder().configure(Client::new);
+		CLIENT_SPEC = clientPair.getRight();
+		CLIENT = clientPair.getLeft();
 	}
 
 	public static void init() {
 		register(ModConfig.Type.COMMON, COMMON_SPEC);
+		register(ModConfig.Type.CLIENT, CLIENT_SPEC);
 	}
 
 	private static void register(ModConfig.Type type, IConfigSpec<?> spec) {
