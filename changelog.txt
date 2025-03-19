@@ -1,3 +1,6 @@
+1.0.6
+- Prevent crash when client effect is disabled by other mods
+
 1.0.5
 - Add client config for red marker visual effect
 - Add some misc casting / alloying recipes

@@ -17,7 +17,10 @@ public class TCUtils {
 		if (!(self instanceof LivingEntity le)) return false;
 		if (!le.level().isClientSide()) return false;
 		if (!TCModConfig.CLIENT.enableRedMarkerEffect.get()) return false;
-		return le.isAlive() && ClientEffectCap.HOLDER.get(le).map.containsKey(TCModifiers.RED_MARKER_EFFECT.get());
+		if (!le.isAlive()) return false;
+		var opt = le.getCapability(ClientEffectCap.CAPABILITY).resolve();
+		if (opt.isEmpty()) return false;
+		return opt.get().map.containsKey(TCModifiers.RED_MARKER_EFFECT.get());
 	}
 
 }
