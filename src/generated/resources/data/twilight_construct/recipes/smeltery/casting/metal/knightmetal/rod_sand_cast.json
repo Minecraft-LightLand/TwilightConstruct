@@ -6,11 +6,8 @@
   "cast_consumed": true,
   "conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:rods/knightmetal"
-      }
+      "type": "mantle:tag_filled",
+      "tag": "forge:rods/knightmetal"
     }
   ],
   "cooling_time": 47,

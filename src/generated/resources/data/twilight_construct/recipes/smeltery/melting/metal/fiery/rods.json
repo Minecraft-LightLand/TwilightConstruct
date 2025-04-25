@@ -2,15 +2,12 @@
   "type": "tconstruct:melting",
   "conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:wires/fiery"
-      }
+      "type": "mantle:tag_filled",
+      "tag": "forge:rodss/fiery"
     }
   ],
   "ingredient": {
-    "tag": "forge:wires/fiery"
+    "tag": "forge:rodss/fiery"
   },
   "result": {
     "amount": 45,

@@ -1,3 +1,6 @@
+1.0.7
+- Fix fiery armor texture
+
 1.0.6
 - Prevent crash when client effect is disabled by other mods
 

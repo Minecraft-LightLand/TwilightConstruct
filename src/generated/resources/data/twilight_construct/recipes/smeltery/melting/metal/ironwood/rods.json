@@ -2,15 +2,12 @@
   "type": "tconstruct:melting",
   "conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:rods/ironwood"
-      }
+      "type": "mantle:tag_filled",
+      "tag": "forge:rodss/ironwood"
     }
   ],
   "ingredient": {
-    "tag": "forge:rods/ironwood"
+    "tag": "forge:rodss/ironwood"
   },
   "result": {
     "amount": 45,

@@ -2,18 +2,15 @@
   "type": "tconstruct:melting",
   "conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:coins/fiery"
-      }
+      "type": "mantle:tag_filled",
+      "tag": "forge:coinss/fiery"
     }
   ],
   "ingredient": {
-    "tag": "forge:coins/fiery"
+    "tag": "forge:coinss/fiery"
   },
   "result": {
-    "amount": 30,
+    "amount": 270,
     "tag": "forge:molten_fiery"
   },
   "temperature": 1500,

@@ -2,15 +2,12 @@
   "type": "tconstruct:melting",
   "conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:plates/knightmetal"
-      }
+      "type": "mantle:tag_filled",
+      "tag": "forge:platess/knightmetal"
     }
   ],
   "ingredient": {
-    "tag": "forge:plates/knightmetal"
+    "tag": "forge:platess/knightmetal"
   },
   "result": {
     "amount": 90,

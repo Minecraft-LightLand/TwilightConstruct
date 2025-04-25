@@ -2,15 +2,12 @@
   "type": "tconstruct:melting",
   "conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:wires/steeleaf"
-      }
+      "type": "mantle:tag_filled",
+      "tag": "forge:rodss/steeleaf"
     }
   ],
   "ingredient": {
-    "tag": "forge:wires/steeleaf"
+    "tag": "forge:rodss/steeleaf"
   },
   "result": {
     "amount": 45,

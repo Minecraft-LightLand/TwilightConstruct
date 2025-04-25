@@ -2,15 +2,12 @@
   "type": "tconstruct:melting",
   "conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:gears/fiery"
-      }
+      "type": "mantle:tag_filled",
+      "tag": "forge:gearss/fiery"
     }
   ],
   "ingredient": {
-    "tag": "forge:gears/fiery"
+    "tag": "forge:gearss/fiery"
   },
   "result": {
     "amount": 360,

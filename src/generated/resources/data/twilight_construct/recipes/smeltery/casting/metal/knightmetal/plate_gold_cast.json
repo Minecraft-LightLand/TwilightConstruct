@@ -5,11 +5,8 @@
   },
   "conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:plates/knightmetal"
-      }
+      "type": "mantle:tag_filled",
+      "tag": "forge:plates/knightmetal"
     }
   ],
   "cooling_time": 66,

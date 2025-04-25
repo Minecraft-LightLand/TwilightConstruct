@@ -2,15 +2,12 @@
   "type": "tconstruct:melting",
   "conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:wires/knightmetal"
-      }
+      "type": "mantle:tag_filled",
+      "tag": "forge:rodss/knightmetal"
     }
   ],
   "ingredient": {
-    "tag": "forge:wires/knightmetal"
+    "tag": "forge:rodss/knightmetal"
   },
   "result": {
     "amount": 45,

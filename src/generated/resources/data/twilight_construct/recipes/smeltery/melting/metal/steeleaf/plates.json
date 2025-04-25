@@ -2,15 +2,12 @@
   "type": "tconstruct:melting",
   "conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:plates/steeleaf"
-      }
+      "type": "mantle:tag_filled",
+      "tag": "forge:platess/steeleaf"
     }
   ],
   "ingredient": {
-    "tag": "forge:plates/steeleaf"
+    "tag": "forge:platess/steeleaf"
   },
   "result": {
     "amount": 90,
